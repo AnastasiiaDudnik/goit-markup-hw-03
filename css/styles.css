@@ -180,6 +180,11 @@ body {
   cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus{
+  background-color: #188CE8;
+}
+
 /*section 2*/
 
 .work-section{
@@ -214,6 +219,10 @@ body {
   text-align: center;
 }
 
+.features-item{
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
 .features-header {
   margin-bottom: 10px;
 
@@ -238,10 +247,13 @@ body {
 
 .team-item{
   background-color: var(--white-color);
+  flex-basis: calc((100% - 30px * 3) / 4);
 }
 
-.team-photo {
-  margin-bottom: 30px;
+
+.team-txt{
+  padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .team-mate {
@@ -253,8 +265,7 @@ body {
   text-align: center;
 }
 .position {
-  margin-bottom: 30px;
-
+  
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -267,6 +278,7 @@ body {
 .btn-list{
   justify-content: center;
   margin-bottom: 50px;
+  gap: 8px;
 }
 
 .btn {
@@ -384,4 +396,8 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.footer-item:not(:last-child){
+margin-bottom: 9px;
 }
