@@ -9,6 +9,7 @@
   --btn-color: #f5f4fa;
 
   --bg-elements: #2f303a;
+  --border-color: #EEEEEE;
 }
 
 /*reset*/
@@ -144,6 +145,9 @@ body {
 
 .hero-title {
   margin-bottom: 30px;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 
   color: var(--white-color);
 
@@ -177,6 +181,10 @@ body {
 }
 
 /*section 2*/
+
+.work-section{
+  padding-bottom: 0;
+}
 
 .visually-hidden {
   position: absolute;
@@ -228,7 +236,8 @@ body {
   background-color: var(--btn-color);
 }
 
-.team-container {
+.team-item{
+  background-color: var(--white-color);
 }
 
 .team-photo {
@@ -244,6 +253,8 @@ body {
   text-align: center;
 }
 .position {
+  margin-bottom: 30px;
+
   color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
@@ -285,14 +296,29 @@ body {
 .port-list{
   list-style: none;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  
   display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio{
   flex-basis: calc((100% - 30px * 2) / 3);
-  border-bottom: 1px solid #EEEEEE;
+  
+}
+
+.port-txt{
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  
 }
 
 .port-item {
@@ -309,9 +335,7 @@ body {
   color: currentColor;
 }
 
-.port-photo {
-  margin-bottom: 20px;
-}
+
 
 .port-name {
   color: var(--text-color);
@@ -330,6 +354,7 @@ body {
 
 .logo-footer {
   padding: 0;
+  margin-right: 0;
 }
 
 .logo-item {
